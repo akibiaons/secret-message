@@ -9,3 +9,11 @@ secretMessage[7] = 'right';
 secretMessage.shift();
 //console.log(secretMessage);
 // Step 5 below will have us adding the string 'programming' the beginning of the array.
+secretMessage.unshift('Programming');
+//console.log(secretMessage);
+// In the code above we used the .unshift() method to apply the string 'Programming' to the beginning of the array, as the 0 index element...
+// Step 6 below will have me use the .splice() to replace indexes 6, 7, 8, 9, and 10. Then replace it with the string 'know'.
+secretMessage.splice(6, 5, 'know');
+//console.log(secretMessage);
+// Above I used the .splice() method to replace a few indexed element strings with a string of 'know'...
+console.log(secretMessage.join(' '));
